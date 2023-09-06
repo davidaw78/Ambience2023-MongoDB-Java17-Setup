@@ -25,7 +25,7 @@ Requirements:
 3. Ensure you have the zip command installed in your Linux
 4. Once you determine the above two. Proceed to download the following:
    a. OpenJDK 17 - https://www.openlogic.com/openjdk-downloads
-   b. MongoDB - https://www.openlogic.com/openjdk-downloads
+   b. MongoDB - https://www.mongodb.com/try/download/community
    c. Ambience2023 - Get a trial version from sales@elixirtech.com
    
 There are three files in total.
