@@ -31,7 +31,7 @@ Requirements:
    
    c. Ambience2023 - Get a trial version from sales@elixirtech.com
    
-There are three files in total.
+There are four files in total.
 1. extract.sh
 2. start.sh
 3. config.env
