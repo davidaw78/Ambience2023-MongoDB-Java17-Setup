@@ -24,6 +24,7 @@ Requirements:
 2. Run cat /etc/os-release to determine the OS version. (e.g. It could be Ubuntu or RHEL)
 3. Ensure you have the zip command installed in your Linux
 4. Once you determine the above two. Proceed to download the following:
+
    a. OpenJDK 17 - https://www.openlogic.com/openjdk-downloads
    b. MongoDB - https://www.mongodb.com/try/download/community
    
