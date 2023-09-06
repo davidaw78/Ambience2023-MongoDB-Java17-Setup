@@ -20,7 +20,7 @@ It will usually take around 30 mins for you to setup Ambience2023, Java17 and Mo
 **How to Install and Run the Project?**
 Requirements:
 1. Run uname -a to determine the architecture of the VM. (e.g. It could be arm64 or x86_64)
-2. Run cat /etc/os-release to determine the OS version. (e.g. It could be ubuntu or RHEL)
+2. Run cat /etc/os-release to determine the OS version. (e.g. It could be Ubuntu or RHEL)
 3. Ensure you have the zip command installed in your Linux
 4. Once you determine the above two. Proceed to download the following:
    a. OpenJDK 17 - https://www.openlogic.com/openjdk-downloads
@@ -35,5 +35,29 @@ There are three files in total.
 
 **Step 1: Run extract.sh To Extract Archive Files**
 
-Run ./extract.sh and you'll get this:
+Run ./extract.sh and you'll get this. Just press enter to extract all.
 ![image](https://github.com/davidaw78/Ambience2023-MongoDB-Java17-Setup/assets/89636227/39dc9bd6-705b-4bb9-ad3f-88b37473fa63)
+
+It will create 3 folders and 3 files, and the binaries for Java and Mongod will be parked accordingly.
+1. amb
+2. mongo
+3. java17
+4. mongod.conf
+5. mongod.service
+6. elx-ambience.service
+
+**Step 2: Run start.sh To Run Ambience2023 & MongoDB As A Service**
+Run ./start.sh to do the following:
+1. Move mongod.conf to the path configured in the config.env
+2. Move the content of amb to the path configured in the config.env
+3. Move the content of mongo to the path configured in the config.env
+4. Move the content of java17 to the path configured in the config.env
+5. Create a symbolic link of java to /usr/local/bin
+6. Copy binaries of mongod to /usr/local/bin
+7. Move elx-ambience.service to /usr/lib/systemd/system
+8. Enable elx-ambience.service to start the service when the OS reboot
+9. Move mongod.service to /usr/lib/systemd/system
+10. Enable mongod.service to start the service when the OS reboot
+
+If everything goes well, we should be able to see the login screen for Ambience2023.
+![image](https://github.com/davidaw78/Ambience2023-MongoDB-Java17-Setup/assets/89636227/f599ee4f-9c79-4fc6-a9e4-50c3da741a1c)
