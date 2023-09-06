@@ -18,6 +18,7 @@ I also realized you can use netstat -tuln to determine if the ports for Ambience
 It will usually take around 30 mins for you to setup Ambience2023, Java17 and MongoDB for one VM. This includes creating mongod.conf, mongod.service and elx-ambience.service, not to forget the storage folder for mongod and system log.
 
 **How to Install and Run the Project?**
+
 Requirements:
 1. Run uname -a to determine the architecture of the VM. (e.g. It could be arm64 or x86_64)
 2. Run cat /etc/os-release to determine the OS version. (e.g. It could be Ubuntu or RHEL)
